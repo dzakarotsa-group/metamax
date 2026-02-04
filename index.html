@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Metamax | Scale Smarter with Automation</title>
+
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --dark: #0F172A;
+      --gray: #64748B;
+      --light: #F8FAFC;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.3;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    /* ================= HERO ================= */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      background: linear-gradient(135deg, #4F46E5, #6366F1);
+      color: white;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      max-width: 600px;
+    }
+
+    .hero-content p {
+      margin-top: 20px;
+      font-size: 18px;
+      max-width: 520px;
+      opacity: 0.9;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ================= ABOUT ================= */
+    .about p {
+      max-width: 800px;
+      color: var(--gray);
+      margin-top: 16px;
+    }
+
+    /* ================= SERVICES ================= */
+    .services {
+      background: white;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: var(--light);
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: var(--gray);
+    }
+
+    /* ================= ADVANTAGES ================= */
+    .advantages ul {
+      margin-top: 24px;
+      list-style: none;
+    }
+
+    .advantages li {
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    /* ================= CTA ================= */
+    .cta {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+    }
+
+    .cta p {
+      margin-top: 16px;
+      opacity: 0.85;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: var(--gray);
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content h1 {
+        font-size: 36px;
+      }
+
+      .hero-image {
+        text-align: center;
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Scale Smarter with Automation</h1>
+      <p>
+        Metamax adalah partner digital untuk jasa iklan, laporan iklan otomatis,
+        dan pengembangan CRM yang membantu bisnis tumbuh lebih cepat dan rapi.
+      </p>
+      <a href="#contact" class="btn">Konsultasi Gratis</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="hero.png" alt="Metamax Automation Illustration">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>Tentang Metamax</h2>
+    <p>
+      Metamax bergerak di bidang periklanan digital, sistem laporan iklan otomatis,
+      dan pembuatan CRM custom. Kami membantu bisnis fokus ke strategi dan penjualan,
+      tanpa ribet urusan teknis dan data.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <h2>Layanan Kami</h2>
+
+    <div class="service-grid">
+      <div class="card">
+        <h3>Jasa Iklan Digital</h3>
+        <p>
+          Perencanaan, pengelolaan, dan optimasi iklan digital berbasis data
+          untuk meningkatkan konversi dan ROI.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Laporan Iklan Otomatis</h3>
+        <p>
+          Dashboard laporan real-time, rapi, dan mudah dipahami
+          tanpa rekap manual.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Pembuatan CRM Custom</h3>
+        <p>
+          CRM sesuai kebutuhan bisnis: leads, follow-up, automasi,
+          dan integrasi WhatsApp/API.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="advantages">
+    <h2>Kenapa Metamax?</h2>
+    <ul>
+      <li>🚀 Fokus otomatisasi & efisiensi</li>
+      <li>📊 Berbasis data, bukan asumsi</li>
+      <li>⚙️ Sistem fleksibel & scalable</li>
+      <li>🤝 Partner bisnis, bukan sekadar vendor</li>
+    </ul>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <h2>Siap Scale Bisnismu?</h2>
+    <p>
+      Konsultasikan kebutuhan iklan, laporan, dan CRM bisnismu bersama Metamax.
+    </p>
+    <a
+      href="https://wa.me/6285136523690?text=Halo%20Metamax,%20saya%20ingin%20konsultasi%20terkait%20jasa%20iklan%20dan%20CRM"
+      class="btn"
+    >
+      Hubungi Kami
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Metamax. All rights reserved.
+  </footer>
+
+</body>
+</html>
